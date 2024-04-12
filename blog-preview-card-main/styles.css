@@ -55,7 +55,11 @@ article {
   font-weight: 800;
   font-size: 25px;
 }
-article:hover {
+article a {
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+}
+article a:hover {
   color: hsl(47, 88%, 63%);
   cursor: pointer;
 }
@@ -78,4 +82,21 @@ section {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 375px) {
+  .box {
+    width: 70%;
+    height: 65%;
+  }
+  summary,
+  aside,
+  article a,
+  section,
+  .box footer {
+    font-size: 90%;
+  }
+  figure img {
+    width: 115%;
+    object-fit: none;
+  }
 }
