@@ -57,6 +57,7 @@ article {
 }
 article:hover {
   color: hsl(47, 88%, 63%);
+  cursor: pointer;
 }
 section {
   color: hsl(0, 0%, 50%);
@@ -77,4 +78,12 @@ section {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 600px) {
+   {
+    width: 80%;
+  }
+  figure img {
+    min-width: 80%;
+  }
 }
