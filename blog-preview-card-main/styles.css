@@ -1,10 +1,3 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 body {
   background-color: hsl(47, 88%, 63%);
 }
@@ -16,7 +9,72 @@ body {
 }
 .box {
   background-color: hsl(0, 0%, 100%);
-  height: 550px;
-  width: 350px;
-  border: 2px solid;
+  height: 520px;
+  width: 380px;
+  border: 1.6px solid;
+  font-family: "Figtree", sans-serif;
+  border-radius: 25px;
+  box-shadow: 8px 8px 0px;
+}
+figure img {
+  margin-top: 5px;
+  transform: translateX(-19px);
+  border-radius: 12px;
+}
+summary,
+aside,
+article,
+section,
+.box footer {
+  margin-left: 21px;
+  margin-bottom: 15px;
+}
+summary,
+aside,
+section,
+.box footer {
+  font-size: 16px;
+}
+summary {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
+  font-size: 15px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+aside {
+  color: hsl(0, 0%, 7%);
+  font-weight: 500;
+}
+article {
+  font-weight: 800;
+  font-size: 25px;
+}
+article:hover {
+  color: hsl(47, 88%, 63%);
+}
+section {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+}
+.box footer img {
+  max-height: 29px;
+  transform: translateY(8px);
+  padding-right: 10px;
+}
+.box footer {
+  font-weight: 800;
+  font-size: 14px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
