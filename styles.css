@@ -7,9 +7,9 @@ body {
   align-items: center;
   height: 100vh;
 }
-.box {
+.mainBox {
   background-color: hsl(0, 0%, 100%);
-  height: 520px;
+  min-height: 520px;
   width: 380px;
   border: 1.6px solid;
   font-family: "Figtree", sans-serif;
@@ -21,45 +21,42 @@ figure img {
   transform: translateX(-19px);
   border-radius: 12px;
 }
-summary,
-aside,
-article,
-section,
-.box footer {
+.tag,
+.publicationDate,
+.title,
+.mainContent,
+.footerAuthor {
   margin-left: 21px;
   margin-bottom: 15px;
 }
-summary,
-aside,
-section,
-.box footer {
+.tag,
+.publicationDate,
+.title,
+.footerAuthor {
   font-size: 16px;
 }
-summary {
+.tag {
   display: inline-block;
   background-color: hsl(47, 88%, 63%);
   font-weight: 800;
   font-size: 15px;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px 13px;
   border-radius: 5px;
   margin-top: 5px;
 }
-aside {
+.publicationDate {
   color: hsl(0, 0%, 7%);
   font-weight: 500;
 }
-article {
+.title {
   font-weight: 800;
   font-size: 25px;
 }
-article a {
+.title a {
   text-decoration: none;
   color: hsl(0, 0%, 7%);
 }
-article a:hover {
+.title a:hover {
   color: hsl(47, 88%, 63%);
   cursor: pointer;
 }
@@ -67,12 +64,12 @@ section {
   color: hsl(0, 0%, 50%);
   line-height: 1.5;
 }
-.box footer img {
+.footerAuthor img {
   max-height: 29px;
   transform: translateY(8px);
   padding-right: 10px;
 }
-.box footer {
+.footerAuthor {
   font-weight: 800;
   font-size: 14px;
 }
@@ -84,15 +81,15 @@ section {
   color: hsl(228, 45%, 44%);
 }
 @media only screen and (max-width: 375px) {
-  .box {
+  .mainBox {
     width: 70%;
-    height: 65%;
+    min-height: 65%;
   }
-  summary,
-  aside,
-  article a,
-  section,
-  .box footer {
+  .tag,
+  .publicationDate,
+  .title a,
+  .mainContent,
+  .footerAuthor {
     font-size: 90%;
   }
   figure img {
